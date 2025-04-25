@@ -2,7 +2,7 @@ import pandas as pd
 import mysql.connector
 
 #load data from csv file
-df = pd.read.csv('data\AWCustomers.csv')
+df = pd.read_csv('data\AWCustomers.csv')
 
 try:
 #database connection 
@@ -16,5 +16,5 @@ try:
     if conn.is_connected():
         print("connected to mysql database  successfully")
     
-except Error as e:
-    print("error in connecting to mysql database")
+except mysql.connector.Error as e:
+    print("error in connecting to mysql database",e)
