@@ -16,5 +16,5 @@ try:
     if conn.is_connected():
         print("connected to mysql database  successfully")
     
-except:
+except Error as e:
     print("error in connecting to mysql database")
