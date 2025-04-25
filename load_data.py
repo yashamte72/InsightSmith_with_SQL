@@ -2,14 +2,14 @@ import pandas as pd
 import mysql.connector
 
 #load data from csv file
-df = pd.read_csv('data\AWCustomers.csv')
+df = pd.read_csv('data/AWCustomers.csv')
 
 try:
 #database connection 
     conn = mysql.connector.connect(
         host = "localhost",
         user = "root",
-        password = "1234",
+        password = "yash",
         database = "insightsmith"
     )
 
